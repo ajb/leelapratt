@@ -1,0 +1,133 @@
+---
+layout: default
+---
+
+<script type="text/javascript" src="/js/slideshow.js"></script>
+<script type="text/javascript">
+<!--
+
+var prefix="/images/";
+
+var pictures = [
+{src: "63.jpg", caption: "\"White Roses at Dawn\""},
+
+{src: "81.jpg", caption: "\"Agapanthus 04\""},
+{src: "84.jpg", caption: "\"Amy Odalisque\""},
+{src: "85.jpg", caption: "\"Amy Profile\""},
+{src: "90.jpg", caption: "\"Buddha under the Tree of Life\""},
+{src: "91.jpg", caption: "\"Ducklings\""},
+{src: "93.jpg", caption: "\"Friday Night Races, Vertical\""},
+{src: "94.jpg", caption: "\"Great Blue Hero in Flight 2\""},
+{src: "96.jpg", caption: "\"Heron in Flight over Water\""},
+{src: "97.jpg", caption: "\"John Handy\""},
+{src: "99.jpg", caption: "\"Max Albert\""},
+{src: "101.jpg", caption: "\"Mt Livermore at Sunset 2\""},
+{src: "102.jpg", caption: "\"Pelican Leaps\""},
+{src: "103.jpg", caption: "\"Pelican Running\""},
+{src: "104.jpg", caption: "\"Pelican Smile\""},
+{src: "105.jpg", caption: "\"Poppy, Navy Blue\""},
+{src: "107.jpg", caption: "\"Red Egret\""},
+{src: "110.jpg", caption: "\"Sails III\""},
+{src: "111.jpg", caption: "\"Smoky Dawn with Winter Birds\""},
+{src: "112.jpg", caption: "\"Snowy Egret, Darting\""},
+{src: "113.jpg", caption: "\"Sonoma Evening\""},
+{src: "114.jpg", caption: "\"Teaching Buddha\""},
+{src: "117.jpg", caption: "\"Winter Birds, Pink Dawn\""},
+
+
+
+
+
+
+
+
+{src: "62.jpg", caption: "\"Winter Egret\""},
+{src: "61.jpg", caption: "\"Buddha, Late Summer\""},
+{src: "66.jpg", caption: "\"Iris One\""},
+{src: "67.jpg", caption: "\"Iris Two\""},
+{src: "69.jpg", caption: "\"Best Friends, 2009\""},
+{src: "72.jpg", caption: "\"Temple Bell, 2009\""},
+{src: "73.jpg", caption: "\"Summer Sunset, 2009\""},
+{src: "74.jpg", caption: "\"Grrrl Power!  2009\""},
+{src: "76.jpg", caption: "\"Mailbox Buddha, 2009\""},
+{src: "77.jpg", caption: "\"Lagoon Buddha, 2009\""},
+{src: "80.jpg", caption: "\"Green Light Buddha, 2009\""},
+{src: "1.jpg", caption: "\"Pacific Rim\""},
+{src: "2.jpg", caption: "\"Thin Winter Sun\""},
+{src: "4.jpg", caption: "\"Trees, Clouds, Dock, January 2006\""},
+{src: "5.jpg", caption: "\"Home, February 2006\""},
+{src: "6.jpg", caption: "\"Buddha, April 2006\""},
+{src: "7.jpg", caption: "\"Dropped Clam Shell, February 2006\""},
+{src: "8.jpg", caption: "\"Fern Shadows, March 2006\""},
+{src: "9.jpg", caption: "\"Weather Comes from the Southwest, March 2006\""},
+{src: "10.jpg", caption: "\"Fennel, Island, Bridge, New Year's Day 2007\""},
+{src: "11.jpg", caption: "\"Winter Morning, November 2006\""},
+{src: "12.jpg", caption: "\"Pelicans, Cormorants, and Egrets, November 2006\""},
+{src: "13.jpg", caption: "\"Japanese Painting, New Year's Day, 2007\""},
+{src: "14.jpg", caption: "\"Scaup, Christmas Day, 2006\""},
+{src: "15.jpg", caption: "\"Low Tide, New Year's Day 2007\""},
+{src: "16.jpg", caption: "\"Foggy Dawn, October 2005\""},
+{src: "17.jpg", caption: "\"Mount Tam, Late Afternoon, June 2006\""},
+{src: "18.jpg", caption: "\"Shorebird,  Christmas Day, 2006\""},
+{src: "19.jpg", caption: "\"Snowy Egret, January 2007\""},
+{src: "20.jpg", caption: "\"A Wealth of Pelicans, November 2006\""},
+{src: "21.jpg", caption: "\"Mount Tam, Summer Sunset, August 2006\""},
+{src: "22.jpg", caption: "\"Peace Rose, October 2005\""},
+{src: "23.jpg", caption: "\"First Sunrise, October 2005\""},
+{src: "24.jpg", caption: "\"Peruvian Lily, January 2006\""},
+{src: "25.jpg", caption: "\"Lido Race, June 2006\""},
+{src: "27.jpg", caption: "\"Through Rose Marie's Fence, June 2006\""},
+{src: "28.jpg", caption: "\"Star Magnolia, February 2006\""},
+{src: "29.jpg", caption: "\"Winter Birds on Richardson Bay, February 2006\""},
+{src: "30.jpg", caption: "\"Ferns at First Light, March 2006\""},
+{src: "32.jpg", caption: "\"Winter Berries, New Year's Day, 2007\""},
+{src: "33.jpg", caption: "\"Peace, With Ducks, September 2006\""},
+{src: "35.jpg", caption: "\"Sunset, September, 2005\""},
+{src: "36.jpg", caption: "\"Bruce and Risley\" - Not for sale; commissioned work."},
+{src: "37.jpg", caption: "\"Late Afternoon,  October 2006\""},
+{src: "38.jpg", caption: "\"Great Blue Heron on the Island, September 2006\""},
+{src: "39.jpg", caption: "\"Evening Race, July 2006\""},
+{src: "40.jpg", caption: "\"Persimmon, December 2005\""},
+{src: "41.jpg", caption: "\"Great White Heron,  October 2005\""},
+{src: "42.jpg", caption: "\"Andrea, YPI Jazz Camp August, 2006\""},
+{src: "43.jpg", caption: "\"Amanda, YPI Jazz Camp August, 2006\""},
+{src: "44.jpg", caption: "\"Zach and Joaquin\" - Not for sale; commissioned work."},
+{src: "45.jpg", caption: "\"Samora and Elena Pinderhughes\""},
+{src: "46.jpg", caption: "\"Olivia, Kenan, Matthew, Benjamin, 2006\""},
+{src: "47.jpg", caption: "\"Malibu Sunset\""},
+{src: "48.jpg", caption: "\"Malibu Evening\""},
+{src: "49.jpg", caption: "\"Malibu Dawn\""},
+{src: "50.jpg", caption: "\"Winter Dawn, December 2006\""},
+{src: "51.jpg", caption: "\"Annie\" - Not for sale; commissioned work."},
+{src: "52.jpg", caption: "\"Katherine\" - Not for sale; commissioned work."},
+{src: "53.jpg", caption: "\"Snowy Egret, Perched\""},
+{src: "54.jpg", caption: "\"Sails I\""},
+{src: "55.jpg", caption: "\"Struver Cup Race\""},
+{src: "56.jpg", caption: "\"Sails II\""},
+{src: "57.jpg", caption: "\"Before the Race\""},
+{src: "58.jpg", caption: "\"Downwind Leg\""},
+{src: "59.jpg", caption: "\"At the Starting Line\""},
+{src: "60.jpg", caption: "\"October Sunrise\""}
+
+
+];
+// -->
+</script>
+
+
+{% include header.html %}
+
+
+  <span id="picRange">
+  </span>
+
+  <span><p id="CaptionBox" style="display: inline;"></p></span>
+
+  <div id="navigation">
+  </div>
+
+  <div id="PictureBox">
+  </div>
+
+
+  {% include footer.html %}
